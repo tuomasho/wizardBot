@@ -2,5 +2,9 @@
   "gryffindor_red": "#F11E08",
   "hufflepuff_yellow": "#EEF81F",
   "ravenclaw_blue": "#0019EB",
-  "slytherin_green": "#029017"
+  "slytherin_green": "#029017",
+  "gold": "#daa520",
+  "purple_dark": "#6a006a",
+  "pink": "#ff9dbb",
+  "blue_light": "#ace9e7"
 }
