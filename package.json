@@ -1,0 +1,22 @@
+{
+  "name": "wizardbot",
+  "version": "0.0.1",
+  "description": "Discord BOT for Harry Potter themed RPG",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuomasho/wizardBot.git"
+  },
+  "author": "Tuomas Honkonen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuomasho/wizardBot/issues"
+  },
+  "homepage": "https://github.com/tuomasho/wizardBot#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}
