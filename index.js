@@ -52,10 +52,10 @@ bot.on("message", async message => {
 const db = require("./json_files/dbconfig.json").mongoUri;
 
 //Connect to MongoDB
-mongoose
-  .connect(db, { userNewUrlParser: true })
-  .then(() => console.log("MongoDB connected...."))
-  .catch(err => console.log(err));
+// mongoose
+//   .connect(db, { userNewUrlParser: true })
+//   .then(() => console.log("MongoDB connected...."))
+//   .catch(err => console.log(err));
 
 //Connect bot
 bot.login(token);

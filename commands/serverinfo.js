@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const botconfig = require("../json_files/botconfig.json");
 const colors = require("../json_files/colors.json");
 
 module.exports.run = async (bot, message, args) => {
