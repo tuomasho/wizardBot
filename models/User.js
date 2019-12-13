@@ -17,7 +17,8 @@ const UserSchema = new Schema({
   },
   currentHouse: {
     type: String,
-    enum: ["gryffindor", "hufflepuff", "ravenclaw", "slytherin"],
+    enum: ["gryffindor", "hufflepuff", "ravenclaw", "slytherin", "null"],
+    default: "null",
     require: true
   },
   timesGryffindor: {
