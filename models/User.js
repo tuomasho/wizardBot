@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+var ItemSchema = new Schema({ name: String });
 
 //Create Schema
 const UserSchema = new Schema({
@@ -36,6 +37,12 @@ const UserSchema = new Schema({
   timesSlytherin: {
     type: Number,
     require: true
+  },
+  familyMoney: {
+    type: Number
+  },
+  familyItems: {
+    type: [ItemSchema]
   }
 });
 
