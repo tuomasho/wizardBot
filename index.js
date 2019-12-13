@@ -1,5 +1,6 @@
 const { Client, Collection } = require("discord.js");
 const { token, prefix } = require("./json_files/botconfig.json");
+const mongoose = require("mongoose");
 
 const bot = new Client();
 
@@ -8,6 +9,7 @@ bot.on("ready", async () => {
   bot.user.setActivity("wizard shit", { type: "LISTENING" });
 });
 
+//Read commands from commands folder
 const fs = require("fs");
 bot.commands = new Collection();
 bot.aliases = new Collection();
@@ -29,6 +31,7 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
+//Make bot to react on messages
 bot.on("message", async message => {
   if (message.author.bot) return;
   if (message.channel.type === "dm") return;
@@ -45,4 +48,14 @@ bot.on("message", async message => {
   if (commandfile) commandfile.run(bot, message, args);
 });
 
+//Get db config
+const db = require("./json_files/dbconfig.json").mongoUri;
+
+//Connect to MongoDB
+mongoose
+  .connect(db, { userNewUrlParser: true })
+  .then(() => console.log("MongoDB connected...."))
+  .catch(err => console.log(err));
+
+//Connect bot
 bot.login(token);
