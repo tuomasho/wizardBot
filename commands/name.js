@@ -23,7 +23,7 @@ module.exports.run = async (bot, message, args) => {
     if (user.discordID) {
       console.log("Existing user found");
     } else {
-      console.log("No user found");
+      //User is starting the game for the first time
       const newUser = new User({
         discordID: author,
         characterFirstname: args[0],
