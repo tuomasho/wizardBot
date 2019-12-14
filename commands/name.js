@@ -1,13 +1,29 @@
 const Discord = require("discord.js");
+const Cryptr = require("cryptr");
 const colors = require("../json_files/colors.json");
+const { encryptKey } = require("../json_files/dbconfig.json");
+
+//User model
+const User = require("../models/User");
+
+//Stat model
+const Stat = require("../models/Stat");
+
+const cryptr = new Cryptr(encryptKey);
 
 module.exports.run = async (bot, message, args) => {
   console.log("Args length: " + args.length);
+  let author = message.author.id;
 
   //has first and lastname declared
   if (args.length > 1) {
-  } else if (args.length == 1) {
-  } else {
+    //User;
+  }
+  //has only firstname declared
+  else if (args.length == 1) {
+  }
+  //dont have anything declared => error
+  else {
     let mEmbed = new Discord.RichEmbed()
       .setColor(colors.purple_dark)
       .setAuthor(`Dear ${message.author.username}`)
