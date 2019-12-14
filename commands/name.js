@@ -41,7 +41,34 @@ module.exports.run = async (bot, message, args) => {
       let newStats = createNewStats(newUser);
 
       newStats.save().then(() => {
-        console.log("New user with new character saved");
+        let mEmbed = new Discord.RichEmbed()
+          .setColor(colors.purple_dark)
+          .setAuthor(
+            `Hello ${newUser.characterFirstname} ${newUser.characterLastname}!`
+          )
+          .setDescription(`Your current statistics are`)
+          .addField("**XP:**", newStats.xp, true)
+          .addBlankField(true)
+          .addField("**HP:**", newStats.hp, true)
+          .addField("**Strength:**", newStats.strength, true)
+          .addBlankField(true)
+          .addField("**Spells:**", newStats.spells, true)
+          .addField("**Flying:**", newStats.flying, true)
+          .addBlankField(true)
+          .addField("**Bravery:**", newStats.bravery, true)
+          .addField("**Intelligence:**", newStats.intelligence, true)
+          .addBlankField(true)
+          .addField("**Potions:**", newStats.potions, true)
+          .addField("**Herbology:**", newStats.herbology)
+          .addField("**Money:**", newStats.money, true)
+          .addField("**Reputation:**", newStats.reputation, true)
+          .addField(
+            "**!!NOTICE!!**",
+            "You are now ready to be sorted! \n Please type **!sort** to continue"
+          );
+
+        message.reply({ embed: mEmbed });
+        message.delete();
       });
     }
   }
