@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const Cryptr = require("cryptr");
 const colors = require("../json_files/colors.json");
 const { encryptKey } = require("../json_files/dbconfig.json");
+const { createNewStats } = require("../functions/stats_functions/createstats");
 
 //User model
 const User = require("../models/User");
@@ -12,12 +13,37 @@ const Stat = require("../models/Stat");
 const cryptr = new Cryptr(encryptKey);
 
 module.exports.run = async (bot, message, args) => {
-  console.log("Args length: " + args.length);
   let author = message.author.id;
+  //!TODO: Add encryption
 
   //has first and lastname declared
   if (args.length > 1) {
-    //User;
+    let user = User.find({ discordID: author });
+
+    if (user.discordID) {
+      console.log("Existing user found");
+    } else {
+      console.log("No user found");
+      const newUser = new User({
+        discordID: author,
+        characterFirstname: args[0],
+        characterLastname: args[1],
+        timesGryffindor: 0,
+        timesHufflepuff: 0,
+        timesRavenclaw: 0,
+        timesSlytherin: 0,
+        familyMoney: 0,
+        familyItems: []
+      });
+
+      newUser.save();
+
+      let newStats = createNewStats(newUser);
+
+      newStats.save().then(() => {
+        console.log("New user with new character saved");
+      });
+    }
   }
   //has only firstname declared
   else if (args.length == 1) {
