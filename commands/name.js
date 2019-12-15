@@ -74,6 +74,7 @@ module.exports.run = async (bot, message, args) => {
   }
   //has only firstname declared
   else if (args.length == 1) {
+    //!TODO: Add only firstname functionality after dying is possible
   }
   //dont have anything declared => error
   else {
