@@ -7,9 +7,6 @@ const { createNewStats } = require("../functions/stats_functions/createstats");
 //User model
 const User = require("../models/User");
 
-//Stat model
-const Stat = require("../models/Stat");
-
 const cryptr = new Cryptr(encryptKey);
 
 module.exports.run = async (bot, message, args) => {
@@ -89,17 +86,6 @@ module.exports.run = async (bot, message, args) => {
     message.reply({ embed: mEmbed });
     message.delete();
   }
-
-  // let sEmbed = new Discord.RichEmbed()
-  //   .setColor(colors.purple_dark)
-  //   .setAuthor(`Welcome ${message.author.username}`)
-  //   .setDescription(
-  //     "If you are new player please type !name <firstname> <lastname>. If you are returning player and wish to start a new family please type !newgame <firstname><lastname> otherwise you can just do !name <firstname>"
-  //   )
-  //   .setFooter(`Best wishes ${bot.user.username}`);
-
-  // message.reply({ embed: sEmbed });
-  // message.delete();
 };
 
 module.exports.config = {
