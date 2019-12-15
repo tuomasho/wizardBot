@@ -1,8 +1,5 @@
 const Stat = require("../../models/Stat");
-
-function randomInteger(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+const { randomInteger } = require("../math_functions/randoms");
 
 module.exports.createNewStats = user => {
   let strength = Math.floor(randomInteger(1, 10));
