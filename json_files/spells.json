@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Accio",
+    "cast": "accio",
+    "baseDamage": "1",
+    "type": "charm",
+    "description": "Summoning charm"
+  },
+  {
+    "name": "Anapneo",
+    "cast": "anapneo",
+    "baseDamage": "1",
+    "type": "spell",
+    "description": "Healing spell"
+  },
+  {
+    "name": "Arresto Momentum",
+    "cast": "arresto_momentum",
+    "baseDamage": "1",
+    "type": "charm",
+    "description": "Slowing charm"
+  },
+  {
+    "name": "Avada Kedavra",
+    "cast": "avada_kedavra",
+    "baseDamage": "1",
+    "type": "curse",
+    "description": "Killing curse"
+  },
+  {
+    "name": "Bombarda",
+    "cast": "bombarda",
+    "baseDamage": "1",
+    "type": "charm",
+    "description": "Small exploding charm"
+  }
+]
