@@ -18,7 +18,7 @@ module.exports.run = async (bot, message, args) => {
     User.findOne({ discordID: `${author}` })
       .lean()
       .exec((err, user) => {
-        if (user.discordID == author) {
+        if (user) {
           console.log("Existing user found");
         } else {
           //User is starting the game for the first time
@@ -26,6 +26,7 @@ module.exports.run = async (bot, message, args) => {
             discordID: author,
             characterFirstname: args[0],
             characterLastname: args[1],
+            currentLocation: "Hogwarts",
             timesGryffindor: 0,
             timesHufflepuff: 0,
             timesRavenclaw: 0,

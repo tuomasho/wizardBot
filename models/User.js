@@ -16,6 +16,20 @@ const UserSchema = new Schema({
     type: String,
     require: true
   },
+  currentLocation: {
+    type: String,
+    enum: [
+      "Hogwarts",
+      "Diagon Alley",
+      "Knockturn Alley",
+      "The Hog's Head",
+      "The Forbidden Forest",
+      "Ministry of Magic",
+      "Azkaban",
+      "Gringotts Wizarding Bank"
+    ],
+    require: true
+  },
   currentHouse: {
     type: String,
     enum: ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin", "null"],
