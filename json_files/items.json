@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Invisibility cloak",
+    "use": "invisibility_cloak",
+    "description": "Makes user invisible",
+    "rarity": ["Rare", "Legendary"]
+  },
+  {
+    "name": "Marauders map",
+    "use": "marauders_map",
+    "description": "Shows location of everyone inside of Hogwarts",
+    "rarity": ["Legendary"]
+  },
+  {
+    "name": "Portkey",
+    "use": "portkey",
+    "description": "Allows person to teleport to wanted location. Portkey will be destroyed.",
+    "rarity": ["Uncommon"]
+  },
+  {
+    "name": "Secrecy sensor",
+    "use": "secrecy_sensor",
+    "description": "Detects concealments and lies. When used before adventure highers the chance to find something",
+    "rarity": ["Rare"]
+  },
+  {
+    "name": "Sack of floo powder",
+    "use": "floo_powder",
+    "description": "Allows person to teleport to wanted location. Uses it",
+    "rarity": ["Common"]
+  },
+  {
+    "name": "Time-turner",
+    "use": "time_turner",
+    "description": "Can be used to double the speed of studying or practicing.",
+    "rarity": ["Legendary"]
+  },
+  {
+    "name": "Cauldron",
+    "use": "cauldron",
+    "description": "Can be used to make potions. Automatically uses the best owned cauldon for brewing",
+    "rarity": ["Common", "Uncommon", "Rare", "Legendary"]
+  },
+  {
+    "name": "Old shoes",
+    "use": "shoes",
+    "description": "Keeps users feet dry...most of the time",
+    "rarity": ["Common"]
+  },
+  {
+    "name": "Teapot",
+    "use": "teapot",
+    "description": "Makes warm water with some flavor",
+    "rarity": ["Common"]
+  },
+  {
+    "name": "Antique clock",
+    "use": "clock",
+    "description": "Tick tock",
+    "rarity": ["Common"]
+  }
+]
