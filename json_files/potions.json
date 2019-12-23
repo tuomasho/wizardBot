@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Brain elixir",
+    "use": "brain_elixir",
+    "description": "Increases the taker's brain power",
+    "difficulty": "1"
+  },
+  {
+    "name": "Bloodroot potion",
+    "use": "bloodroot_potion",
+    "description": "Poisonous potion",
+    "difficulty": "1"
+  },
+  {
+    "name": "Bulgeye potion",
+    "use": "bulgeye_potion",
+    "description": "Makes the taker's eyes swell",
+    "difficulty": "1"
+  },
+  {
+    "name": "Confusing concoction",
+    "use": "confusing_concoction",
+    "description": "Confuses the taker",
+    "difficulty": "1"
+  },
+  {
+    "name": "Death-cap draught",
+    "use": "deathcap_draught",
+    "description": "Poisonous potion",
+    "difficulty": "1"
+  },
+  {
+    "name": "Felix felicis",
+    "use": "felix_felicis",
+    "description": "Taker is successful in all their endeavours",
+    "difficulty": "1"
+  },
+  {
+    "name": "Moonseed poison",
+    "use": "moonseed_poison",
+    "description": "Poison",
+    "difficulty": "1"
+  },
+  {
+    "name": "Murtlap essence",
+    "use": "murtlap_essence",
+    "description": "Healing potion",
+    "difficulty": "1"
+  },
+  {
+    "name": "Potion 86",
+    "use": "potion_86",
+    "description": "Extremely poisonous",
+    "difficulty": "1"
+  },
+  {
+    "name": "Strength potion",
+    "use": "strength_potion",
+    "description": "Increases the takers strength for a moment",
+    "difficulty": "1"
+  },
+  {
+    "name": "Golden potion",
+    "use": "golden_potion",
+    "description": "Healing potion",
+    "difficulty": "1"
+  },
+  {
+    "name": "Weakness potion",
+    "use": "weakness_potion",
+    "description": "Decreases targets strength and bravery",
+    "difficulty": "1"
+  },
+  {
+    "name": "Weedosoros",
+    "use": "weedosoros",
+    "description": "Poison",
+    "difficulty": "1"
+  },
+  {
+    "name": "Wiggenweld potion",
+    "use": "wiggenweld",
+    "description": "Healing potion",
+    "difficulty": "1"
+  }
+]
