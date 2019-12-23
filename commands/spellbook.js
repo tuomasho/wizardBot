@@ -9,7 +9,10 @@ module.exports.run = async (bot, message, args) => {
     .setFooter(`From ${bot.user.username}'s own private library`);
 
   spells.forEach(spell => {
-    mEmbed.addField(`**${spell.name}**`, `Type: ${spell.type}`);
+    mEmbed.addField(
+      `**${spell.name}**`,
+      `**Type:** ${spell.type} | **Cast:** ${spell.cast}\n**Description:** ${spell.description}\n**Base damge:** ${spell.baseDamage} | **Difficulty:** ${spell.difficulty}`
+    );
   });
 
   message.reply({ embed: mEmbed });
