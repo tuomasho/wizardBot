@@ -3,6 +3,7 @@
     "name": "Accio",
     "cast": "accio",
     "baseDamage": "1",
+    "difficulty": "1",
     "type": "charm",
     "description": "Summoning charm"
   },
@@ -10,6 +11,7 @@
     "name": "Anapneo",
     "cast": "anapneo",
     "baseDamage": "1",
+    "difficulty": "1",
     "type": "spell",
     "description": "Healing spell"
   },
@@ -17,6 +19,7 @@
     "name": "Arresto Momentum",
     "cast": "arresto_momentum",
     "baseDamage": "1",
+    "difficulty": "1",
     "type": "charm",
     "description": "Slowing charm"
   },
@@ -24,6 +27,7 @@
     "name": "Avada Kedavra",
     "cast": "avada_kedavra",
     "baseDamage": "1",
+    "difficulty": "1",
     "type": "curse",
     "description": "Killing curse"
   },
@@ -31,6 +35,7 @@
     "name": "Bombarda",
     "cast": "bombarda",
     "baseDamage": "1",
+    "difficulty": "1",
     "type": "charm",
     "description": "Small explosion charm"
   },
@@ -38,7 +43,88 @@
     "name": "Bombarda Maxima",
     "cast": "bombarda_maxima",
     "baseDamage": "1",
+    "difficulty": "1",
     "type": "charm",
     "description": "Large explosion charm"
+  },
+  {
+    "name": "Brackium Emendo",
+    "cast": "brackium_emendo",
+    "baseDamage": "1",
+    "difficulty": "1",
+    "type": "spell",
+    "description": "Healing spell"
+  },
+  {
+    "name": "Colloshoo",
+    "cast": "colloshoo",
+    "baseDamage": "1",
+    "difficulty": "1",
+    "type": "hex",
+    "description": "Sticks the target to the ground"
+  },
+  {
+    "name": "Crucio",
+    "cast": "crucio",
+    "baseDamage": "1",
+    "difficulty": "1",
+    "type": "curse",
+    "description": "Inflicts lot of pain"
+  },
+  {
+    "name": "Expulso",
+    "cast": "expulso",
+    "baseDamage": "1",
+    "difficulty": "1",
+    "type": "curse",
+    "description": "Exploding curse"
+  },
+  {
+    "name": "Impedimenta",
+    "cast": "impedimenta",
+    "baseDamage": "1",
+    "difficulty": "1",
+    "type": "jinx",
+    "description": "Slows down or stops the target"
+  },
+  {
+    "name": "Imperio",
+    "cast": "imperio",
+    "baseDamage": "1",
+    "difficulty": "1",
+    "type": "curse",
+    "description": "Takes target under casters control"
+  },
+  {
+    "name": "Obscuro",
+    "cast": "obscuro",
+    "baseDamage": "1",
+    "difficulty": "1",
+    "type": "conjuration",
+    "description": "Blindfolds the target"
+  },
+  {
+    "name": "Portus",
+    "cast": "portus",
+    "baseDamage": "1",
+    "difficulty": "1",
+    "type": "charm",
+    "description": "Turns object into portkey"
+  },
+  {
+    "name": "Sectumsempra",
+    "cast": "sectumsempra",
+    "baseDamage": "1",
+    "difficulty": "1",
+    "type": "curse",
+    "description": "Bleeding curse"
+  },
+  {
+    "name": "Stupefy",
+    "cast": "stupefy",
+    "baseDamage": "1",
+    "difficulty": "1",
+    "type": "charm",
+    "description": "Stuns target"
   }
 ]
