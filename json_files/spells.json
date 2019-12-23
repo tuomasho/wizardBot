@@ -32,6 +32,13 @@
     "cast": "bombarda",
     "baseDamage": "1",
     "type": "charm",
-    "description": "Small exploding charm"
+    "description": "Small explosion charm"
+  },
+  {
+    "name": "Bombarda Maxima",
+    "cast": "bombarda_maxima",
+    "baseDamage": "1",
+    "type": "charm",
+    "description": "Large explosion charm"
   }
 ]
