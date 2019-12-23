@@ -15,3 +15,7 @@ module.exports.getHouseColor = house => {
 
   return color;
 };
+
+module.exports.getMinisterColor = () => {
+  return colors.purple_dark;
+};
