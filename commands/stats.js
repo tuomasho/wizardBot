@@ -1,7 +1,5 @@
 const Discord = require("discord.js");
 const { getHouseColor } = require("../functions/misc_functions/color");
-const { findUser } = require("../functions/db_functions/finduser");
-const { findStat } = require("../functions/db_functions/findstat");
 
 //User model
 const User = require("../models/User");
