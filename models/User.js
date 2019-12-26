@@ -8,6 +8,10 @@ const UserSchema = new Schema({
     type: String,
     require: true
   },
+  lastCheckin: {
+    type: Number,
+    default: new Date().getTime()
+  },
   characterFirstname: {
     type: String,
     require: true
