@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Merperson",
+    "baseDamage": "1"
+  },
+  {
+    "name": "Acromantula",
+    "baseDamage": "1"
+  },
+  {
+    "name": "Basilisk",
+    "baseDamage": "1"
+  },
+  {
+    "name": "Pixie",
+    "baseDamage": "1"
+  },
+  {
+    "name": "Werewolf",
+    "baseDamage": "1"
+  },
+  {
+    "name": "Mountain troll",
+    "baseDamage": "1"
+  },
+  {
+    "name": "Dragon",
+    "baseDamage": "1"
+  },
+  {
+    "name": "Giant",
+    "baseDamage": "1"
+  },
+  {
+    "name": "Death eater",
+    "baseDamage": "1"
+  }
+]
