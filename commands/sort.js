@@ -2,11 +2,14 @@ const Discord = require("discord.js");
 const { getHouseColor } = require("../functions/misc_functions/color");
 const { sort } = require("../functions/misc_functions/sort");
 const { addTimeInHouse } = require("../functions/stats_functions/timesInHouse");
+const { baseSubjects } = require("../functions/school_functions/subjects");
 
 //User model
 const User = require("../models/User");
 //Stat model
 const Stat = require("../models/Stat");
+//Inv model
+const Inv = require("../models/Inv");
 
 module.exports.run = async (bot, message, args) => {
   let author = message.author.id;
@@ -53,6 +56,13 @@ module.exports.run = async (bot, message, args) => {
                     message.delete();
                   }
                 });
+
+              const newInv = new Inv({
+                discordID: author,
+                learnedSubjects: baseSubjects()
+              });
+
+              newInv.save();
             } else {
               message.reply(
                 " you are already sorted! If you need help type **!help**"
