@@ -20,6 +20,11 @@ const UserSchema = new Schema({
     type: String,
     require: true
   },
+  currentActivity: {
+    type: String,
+    enum: ["none", "studying", "practicing", "adventuring"],
+    require: true
+  },
   currentLocation: {
     type: String,
     enum: [
