@@ -1,6 +1,9 @@
 const Discord = require("discord.js");
-const { getMinisterColor } = require("../functions/misc_functions/color");
 const subjects = require("../json_files/subjects.json");
+const {
+  addStudyTimer,
+  checkForTimer
+} = require("../functions/misc_functions/timers");
 
 module.exports.run = async (bot, message, args) => {
   let author = message.author.id;
@@ -11,7 +14,9 @@ module.exports.run = async (bot, message, args) => {
 
     subjects.forEach(subject => {
       if (subject.use == subjectString) {
-        console.log("Subject found");
+        if (!checkForTimer()) {
+          addStudyTimer(author, subject.use, length);
+        }
       }
     });
   } else {
