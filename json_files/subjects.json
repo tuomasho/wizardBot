@@ -1,42 +1,52 @@
 [
   {
     "name": "Defense against the dark arts",
+    "use": "dark_arts_defence",
     "bonusHouse": "Gryffindor"
   },
   {
     "name": "Charms",
+    "use": "charms",
     "bonusHouse": "Gryffindor"
   },
   {
     "name": "Potions",
+    "use": "potions",
     "bonusHouse": "Slytherin"
   },
   {
     "name": "Alchemy",
+    "use": "alchemy",
     "bonusHouse": "Slytherin"
   },
   {
     "name": "Herbology",
+    "use": "herbology",
     "bonusHouse": "Huffelpuff"
   },
   {
     "name": "Care of magical creatures",
+    "use": "magical_creatures",
     "bonusHouse": "Huffelpuff"
   },
   {
     "name": "Astronomy",
+    "use": "astronomy",
     "bonusHouse": "Ravenclaw"
   },
   {
     "name": "History of magic",
+    "use": "magic_history",
     "bonusHouse": "Ravenclaw"
   },
   {
     "name": "Flying",
+    "use": "flying",
     "bonusHouse": "none"
   },
   {
     "name": "Apparition",
+    "use": "apparition",
     "bonusHouse": "none"
   }
 ]
