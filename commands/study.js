@@ -5,6 +5,9 @@ const {
   checkForTimer
 } = require("../functions/misc_functions/timers");
 
+//User model
+const User = require("../models/User");
+
 module.exports.run = async (bot, message, args) => {
   let author = message.author.id;
 
@@ -14,8 +17,25 @@ module.exports.run = async (bot, message, args) => {
 
     subjects.forEach(subject => {
       if (subject.use == subjectString) {
-        if (!checkForTimer()) {
-          addStudyTimer(author, subject.use, length);
+        if (!checkForTimer(author)) {
+          User.findOne({ discordID: `${author}` })
+            .lean()
+            .exec((err, user) => {
+              if (err) {
+                console.log("[LOGS]: " + err);
+              } else {
+                if (user.currentLocation == "Hogwarts") {
+                  message.reply(
+                    ` you have started studying ${subject.name} for ${length} minutes.`
+                  );
+                  addStudyTimer(message, user.currentHouse, subject, length);
+                } else {
+                  message.reply(" you must be inside of Hogwarts to study.");
+                }
+              }
+            });
+        } else {
+          //There is active timer for this user
         }
       }
     });
