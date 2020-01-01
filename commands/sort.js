@@ -21,13 +21,13 @@ module.exports.run = async (bot, message, args) => {
         if (user.currentLocation == "Hogwarts") {
           if (user.discordID == author) {
             if (user.currentHouse == "null") {
-              Stat.findOne({ discordID: author })
+              Stat.findOne({ discordID: `${author}` })
                 .lean()
                 .exec((err, stat) => {
                   if (stat.discordID == author) {
                     let newHouse = sort(user, stat);
                     let updatedUser = addTimeInHouse(user, newHouse);
-                    User.where({ discordID: author })
+                    User.where({ discordID: `${author}` })
                       .updateMany({
                         currentHouse: newHouse,
                         timesGryffindor: updatedUser.timesGryffindor,
