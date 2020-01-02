@@ -17,10 +17,10 @@ module.exports.run = async (bot, message, args) => {
 
     subjects.forEach(subject => {
       if (subject.use == subjectString) {
-        if (!checkForTimer(author)) {
-          User.findOne({ discordID: `${author}` })
-            .lean()
-            .exec((err, user) => {
+        User.findOne({ discordID: `${author}` })
+          .lean()
+          .exec((err, user) => {
+            if (!checkForTimer(author)) {
               if (err) {
                 console.log("[LOGS]: " + err);
               } else {
@@ -33,10 +33,14 @@ module.exports.run = async (bot, message, args) => {
                   message.reply(" you must be inside of Hogwarts to study.");
                 }
               }
-            });
-        } else {
-          //There is active timer for this user
-        }
+            } else {
+              //There is active timer for this user.
+              message.reply(
+                ` you are currently ${user.currentActivity} at ${user.currentLocation}.`
+              );
+              message.delete();
+            }
+          });
       }
     });
   } else {
