@@ -26,7 +26,7 @@ module.exports.run = async (bot, message, args) => {
             discordID: author,
             characterFirstname: args[0],
             characterLastname: args[1],
-            currentActivity: "none",
+            currentActivity: "doing nothing",
             currentLocation: "Hogwarts",
             timesGryffindor: 0,
             timesHufflepuff: 0,
