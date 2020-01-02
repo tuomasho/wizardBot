@@ -11,6 +11,11 @@ module.exports.addStudyTimer = (message, authorHouse, subject, time) => {
     let timeout = setTimeout(() => {
       studySubject(message, authorHouse, subject, time);
       this.removeTimer(message.author.id);
+      User.where({ discordID: `${message.author.id}` })
+        .updateOne({
+          currentActivity: "doing nothing"
+        })
+        .then();
     }, time * minute);
 
     var timer = {
