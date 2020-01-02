@@ -36,7 +36,7 @@ module.exports.run = async (bot, message, args) => {
             } else {
               //There is active timer for this user.
               message.reply(
-                ` you are currently ${user.currentActivity} at ${user.currentLocation}.`
+                ` you are currently ${user.currentActivity} at ${user.currentLocation}. Type !stop to stop current action.`
               );
               message.delete();
             }
