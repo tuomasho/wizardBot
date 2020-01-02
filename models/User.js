@@ -22,7 +22,7 @@ const UserSchema = new Schema({
   },
   currentActivity: {
     type: String,
-    enum: ["none", "studying", "practicing", "adventuring"],
+    enum: ["doing nothing", "studying", "practicing", "adventuring"],
     require: true
   },
   currentLocation: {
