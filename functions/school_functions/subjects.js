@@ -1,5 +1,4 @@
 const subs = require("../../json_files/subjects.json");
-const mongoose = require("mongoose");
 
 //User model
 const Inv = require("../../models/Inv");
@@ -28,8 +27,10 @@ module.exports.studySubject = (message, authorHouse, subject, length) => {
           //Check if user has bonus on studyin subject
           if (authorHouse == subject.bonusHouse) {
             invSubject.level += 0.01 * length * 2;
+            invSubject.level = invSubject.level.toFixed(2);
           } else {
             invSubject.level += 0.01 * length;
+            invSubject.level = invSubject.level.toFixed(2);
           }
 
           Inv.where({ discordID: `${message.author.id}` })
