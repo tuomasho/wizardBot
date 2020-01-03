@@ -5,30 +5,30 @@
   },
   {
     "name": "Diagon Alley",
-    "location": 0
+    "location": 8
   },
   {
     "name": "Knockturn Alley",
-    "location": 0
+    "location": 8.5
   },
   {
     "name": "The Hog's Head",
-    "location": 0
+    "location": 2
   },
   {
     "name": "The Forbidden Forest",
-    "location": 0
+    "location": 0.5
   },
   {
     "name": "Ministry of Magic",
-    "location": 0
+    "location": 11
   },
   {
     "name": "Azkaban",
-    "location": 0
+    "location": 20
   },
   {
     "name": "Gringotts Wizarding Bank",
-    "location": 0
+    "location": 9.5
   }
 ]
