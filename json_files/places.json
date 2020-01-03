@@ -1,34 +1,42 @@
 [
   {
     "name": "Hogwarts",
+    "use": "hogwarts",
     "location": 0
   },
   {
     "name": "Diagon Alley",
+    "use": "diagon_alley",
     "location": 8
   },
   {
     "name": "Knockturn Alley",
+    "use": "knockturn_alley",
     "location": 8.5
   },
   {
     "name": "The Hog's Head",
+    "use": "hogs_head",
     "location": 2
   },
   {
     "name": "The Forbidden Forest",
+    "use": "forbidden_forest",
     "location": 0.5
   },
   {
     "name": "Ministry of Magic",
+    "use": "magic_ministry",
     "location": 11
   },
   {
     "name": "Azkaban",
+    "use": "azkaban",
     "location": 20
   },
   {
     "name": "Gringotts Wizarding Bank",
+    "use": "gringotts",
     "location": 9.5
   }
 ]
