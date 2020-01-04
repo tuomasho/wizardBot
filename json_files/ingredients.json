@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Bloodroot",
+    "use": "bloodroot",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Death-cap",
+    "use": "deathcap",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Moonseed",
+    "use": "moonseed",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Murtlap",
+    "use": "murtlap",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Wiggenweld",
+    "use": "wiggenweld",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Unicorn hair",
+    "use": "unicorn_hair",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Bitterroot",
+    "use": "bitterroot",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Boomslang",
+    "use": "boomslang",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Gold chips",
+    "use": "gold_chips",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Phoenix feather",
+    "use": "phoenix_feather",
+    "rarity": "Rare"
+  },
+  {
+    "name": "Dragon heartstring",
+    "use": "dragon_heartstring",
+    "rarity": "Rare"
+  }
+]
